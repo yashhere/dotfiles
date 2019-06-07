@@ -1,0 +1,8 @@
+git/.work-gitconfig
+vim/.vim/plugins
+vim/.vim/bundle
+vim/.vim/cache
+vim/.vim/backups
+vim/.vim/swap
+vim/.vim/undo
+

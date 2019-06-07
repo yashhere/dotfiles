@@ -1,0 +1,74 @@
+#zmodload zsh/zprof
+#=============================== zplug setup ================================
+
+source ~/.zplug/init.zsh
+
+# To manage zplug itself like other packages
+zplug 'zplug/zplug', hook-build:'zplug --self-manage'
+# Async for zsh, used by pure
+zplug "mafredri/zsh-async", from:github, defer:0
+# Load completion library for those sweet [tab] squares
+zplug "lib/completion", from:oh-my-zsh
+# Theme!
+#zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
+zplug "therealklanni/purity", use:purity.zsh, from:github, as:theme 
+# command auto-suggestion based on history
+zplug "zsh-users/zsh-autosuggestions"
+# faster directory navigation
+zplug "skywind3000/z.lua"
+
+zplug load
+
+#=============================== zplug setup ================================
+
+
+#=============================== zsh personal setup ================================
+
+export LANG=en_US.UTF-8
+export EDITOR="vim"
+bindkey -e
+
+#bindkey "[D" backward-word
+#bindkey "[C" forward-word
+bindkey "^[a" beginning-of-line
+bindkey "^[e" end-of-line
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
+autoload -U compinit colors vcs_info
+colors
+compinit
+
+# Report command running time if it is more than 3 seconds
+REPORTTIME=5
+
+# Keep a lot of history
+HISTFILE=~/.zhistory
+HISTSIZE=50000
+SAVEHIST=50000
+
+# Add commands to history as they are entered, don't wait for shell to exit
+setopt INC_APPEND_HISTORY
+
+# Also remember command start time and duration
+setopt EXTENDED_HISTORY
+
+# Do not keep duplicate commands in history
+setopt HIST_IGNORE_ALL_DUPS
+
+# Do not remember commands that start with a whitespace
+setopt HIST_IGNORE_SPACE
+
+# Correct spelling of all arguments in the command line
+setopt CORRECT_ALL
+
+# Enable autocompletion
+zstyle ':completion:*' completer _complete _correct _approximate
+
+# user-friendly command output
+export CLICOLOR=1
+ls --color=auto &> /dev/null && alias ls='ls --color=auto'
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+#zprof
