@@ -5,4 +5,4 @@ vim/.vim/cache
 vim/.vim/backups
 vim/.vim/swap
 vim/.vim/undo
-
+vim/.vim/.netrwhist
