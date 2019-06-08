@@ -135,3 +135,9 @@ set sessionoptions-=options
 
 " Delete comment character when joining commented lines
 set formatoptions+=j
+
+" recognize .md files as markdown files
+au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
+
+" enable spell-checking for markdown files
+autocmd BufRead,BufNewFile *.md setlocal spell
