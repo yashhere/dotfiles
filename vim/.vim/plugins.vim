@@ -16,7 +16,8 @@ execute 'source  ~/.vim/plugins/autoload/plug.vim'
 call plug#begin('~/.vim/plugins/plugged')
 
 " colors
-Plug 'dracula/vim', { 'as': 'dracula' }
+" Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'chriskempson/base16-vim'
 
 " general
 Plug 'mattn/gist-vim'

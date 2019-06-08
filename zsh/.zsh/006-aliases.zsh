@@ -15,3 +15,7 @@ function t() {
   [[ $X -eq 0 ]] || X=X
   tmux new-session -A -s $X
 }
+
+alias tma='tmux attach -d -t'
+alias git-tmux='tmux new -s $(basename $(pwd))'
+

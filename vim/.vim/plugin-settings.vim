@@ -101,9 +101,9 @@ augroup completionhide
 augroup end
 
 " lightline
-let g:lightline = {
-      \ 'colorscheme': 'dracula',
-      \ }
+" let g:lightline = {
+      " \ 'colorscheme': 'dracula',
+      " \ }
 
 augroup alestatus
   au!
@@ -111,7 +111,11 @@ augroup alestatus
 augroup end
 
 " Theme
-colorscheme dracula
+" colorscheme dracula
 highlight SignColumn guibg=#272822
 let g:rehash256 = 1
 
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
