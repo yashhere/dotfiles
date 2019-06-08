@@ -61,7 +61,7 @@ setw -g pane-active-border-style "fg=$color_main"
 set -g status on
 set -g status-interval 5
 set -g status-position bottom
-set -g status-justify center
+set -g status-justify left
 set -g status-right-length 70
 set -g status-left-length 30
 
