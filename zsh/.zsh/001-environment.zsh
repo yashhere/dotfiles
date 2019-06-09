@@ -29,3 +29,7 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 
 # use 256 color terminal
 export TERM=xterm-256color
+
+if which rbenv > /dev/null; then 
+    eval "$(rbenv init -)"; 
+fi

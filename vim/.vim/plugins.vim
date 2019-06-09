@@ -24,17 +24,11 @@ Plug 'mattn/gist-vim'
 Plug 'mattn/webapi-vim'
 
 " programming
-Plug 'ajh17/VimCompletesMe'
-Plug 'w0rp/ale'
-Plug 'sheerun/vim-polyglot'
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdcommenter'
 
 " stylize
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'itchyny/lightline.vim'
-Plug 'ryanoasis/vim-devicons'
 Plug 'chrisbra/colorizer'
 Plug 'powerman/vim-plugin-AnsiEsc'
 

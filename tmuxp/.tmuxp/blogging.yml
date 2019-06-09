@@ -1,0 +1,19 @@
+session_name: blogging
+start_directory: ~/Desktop/personal/yashhere.gitlab.io/
+windows:
+    - window_name: server
+      layout: main-vertical
+      panes:
+        - hs
+        - shell_command:
+            - sleep 10
+            - open http://localhost:1313
+        - shell_command:
+            - git status
+          focus: true
+
+    - window_name: editor
+      panes:
+        - shell_command:
+            - cd content/posts/
+            - vim 
