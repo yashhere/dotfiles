@@ -8,6 +8,7 @@ alias grep="grep -i"
 alias e="$EDITOR"
 alias v="vim"
 alias tree='tree -CAFa -I "CVS|*.*.package|.svn|.git|.hg|node_modules|bower_components" --dirsfirst'
+alias hs="hugo serve --watch --enableGitInfo --forceSyncStatic --gc --cleanDestinationDir --buildFuture --buildDrafts --disableFastRender"
 
 # tmux
 function t() {
