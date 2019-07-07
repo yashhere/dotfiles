@@ -6,3 +6,6 @@ vim/.vim/backups
 vim/.vim/swap
 vim/.vim/undo
 vim/.vim/.netrwhist
+vim/.vim/plugged
+vim/.vim/autoload
+tmux/.tmux/resurrect

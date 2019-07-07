@@ -10,6 +10,7 @@ zplug "lib/completion", from:oh-my-zsh
 #zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
 # zplug "therealklanni/purity", use:purity.zsh, from:github, as:theme-
 zplug denysdovhan/spaceship-prompt, use:spaceship.zsh, from:github, as:theme
+zplug 'dracula/zsh', as:theme
 # command auto-suggestion based on history
 zplug "zsh-users/zsh-autosuggestions"
 # faster directory navigation
