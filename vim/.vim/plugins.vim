@@ -18,7 +18,7 @@ call plug#begin('~/.vim/plugins/plugged')
 " colors
 " Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'chriskempson/base16-vim'
-
+Plug 'dracula/vim', { 'as': 'dracula' }
 " general
 Plug 'mattn/gist-vim'
 Plug 'mattn/webapi-vim'
