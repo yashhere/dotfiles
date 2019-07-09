@@ -6,6 +6,9 @@ let configs = [
 \  "plugin-settings",
 \]
 
+" Change shell
+set shell=bash    " Vim expects a POSIX-compliant shell, which Fish (my default shell) is not
+
 for file in configs
   let x = expand("~/.vim/".file.".vim")
   if filereadable(x)

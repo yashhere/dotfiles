@@ -16,12 +16,8 @@ execute 'source  ~/.vim/plugins/autoload/plug.vim'
 call plug#begin('~/.vim/plugins/plugged')
 
 " colors
-" Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'chriskempson/base16-vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
-" general
-Plug 'mattn/gist-vim'
-Plug 'mattn/webapi-vim'
 
 " programming
 Plug 'scrooloose/nerdcommenter'
@@ -29,8 +25,6 @@ Plug 'scrooloose/nerdcommenter'
 " stylize
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'itchyny/lightline.vim'
-Plug 'chrisbra/colorizer'
-Plug 'powerman/vim-plugin-AnsiEsc'
 
 " multiplexer integration
 Plug 'roxma/vim-tmux-clipboard'
