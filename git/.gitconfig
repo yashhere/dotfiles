@@ -29,7 +29,7 @@
 	stat = true
 
 [credential]
-  helper = cache --timeout=3600
+	helper = osxkeychain
 
 [diff]
   mnemonicprefix = true
@@ -100,3 +100,5 @@
     path = ~/.personal-gitconfig
 [github]
 	user = yashhere
+[status]
+	submoduleSummary = true

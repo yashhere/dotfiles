@@ -1,4 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/yaagarwa/.vim/plugins'
-let g:netrw_dirhist_2='/Users/yaagarwa/dotfiles/tmux/.tmux'
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/Users/yaagarwa/Desktop/personal/DocForVisa2019'
+let g:netrw_dirhist_1='/Users/yaagarwa/aevolume/grafeas-postgres/server'
