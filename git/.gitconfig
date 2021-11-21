@@ -94,10 +94,11 @@
 	enabled = true
 [user]
 	name = Yash Agarwal
+	email = yashagarwaljpr@gmail.com
 [include]
+  path = ~/.personal-gitconfig
+[includeIf "gitdir:~/projects"]
   path = ~/.work-gitconfig
-[includeIf "gitdir:~/Desktop/personal/"]
-    path = ~/.personal-gitconfig
 [github]
 	user = yashhere
 [status]

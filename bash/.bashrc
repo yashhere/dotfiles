@@ -11,5 +11,6 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
+[ -f ~/.privaterc ] && source ~/.privaterc
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-echo "loadedbrew doctor"
