@@ -17,7 +17,7 @@ call plug#begin('~/.vim/plugins/plugged')
 
 " colors
 Plug 'chriskempson/base16-vim'
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'NLKNguyen/papercolor-theme'
 
 " programming
 Plug 'scrooloose/nerdcommenter'

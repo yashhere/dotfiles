@@ -33,7 +33,10 @@ let g:gist_post_private = 1
 let g:vim_json_syntax_conceal = 0
 
 " verticle diffs
-set diffopt+=vertical
+if &diff
+    set diffopt-=internal
+    set diffopt+=vertical
+endif
 
 " close if final buffer is netrw or the quickfix
 augroup finalcountdown
@@ -100,20 +103,33 @@ augroup completionhide
   autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 augroup end
 
-" lightline
-" let g:lightline = {
-      " \ 'colorscheme': 'dracula',
-      " \ }
-
 augroup alestatus
   au!
   autocmd User ALELint call lightline#update()
 augroup end
 
+let g:lightline = { 'colorscheme': 'PaperColor' }
+
 " Theme
-colorscheme dracula
+set t_Co=256   " This is may or may not needed.
+set background=light    " or use set background=dark
+colorscheme PaperColor
 highlight SignColumn guibg=#272822
 let g:rehash256 = 1
+let g:PaperColor_Theme_Options = {
+  \   'language': {
+  \     'python': {
+  \       'highlight_builtins' : 1
+  \     },
+  \     'cpp': {
+  \       'highlight_standard_library': 1
+  \     },
+  \     'c': {
+  \       'highlight_builtins' : 1
+  \     }
+  \   }
+  \ }
+
 
 " if filereadable(expand("~/.vimrc_background"))
   " let base16colorspace=256
