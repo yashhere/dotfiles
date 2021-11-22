@@ -1,0 +1,10 @@
+vim/.vim/plugins
+.vim/bundle
+.vim/cache
+.vim/backups
+.vim/undo
+.vim/.netrwhist
+.vim/plugged
+.vim/autoload
+.vim/plugins
+.vim/swaps

@@ -141,3 +141,6 @@ au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 
 " enable spell-checking for markdown files
 autocmd BufRead,BufNewFile *.md setlocal spell
+
+" enable fzf
+set rtp+=/usr/local/opt/fzf

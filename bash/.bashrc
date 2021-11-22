@@ -1,14 +1,12 @@
 FILES=~/.bash/*.bash
 for config in $FILES
 do
-    echo $config
+    source $config
 done
 
 if [ -n "$BASH_VERSION" ]; then
-    # include .bashrc if it exists
-    if [ -f "$HOME/.bash_profile" ]; then
-	. "$HOME/.bash_profile"
-    fi
+    # include .bash_profile if it exists
+    [ -f "$HOME/.bash_profile" ] && source "$HOME/.bash_profile"
 fi
 
 [ -f ~/.privaterc ] && source ~/.privaterc
