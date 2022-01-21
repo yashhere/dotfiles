@@ -14,7 +14,6 @@ tap 'homebrew/cask-fonts'
   cask 'font-open-sans-condensed'
 
   ## Font Family: ETC
-  cask 'font-source-han-noto-cjk'
   cask 'font-source-code-pro'
   cask 'font-roboto'
   cask 'font-hack'

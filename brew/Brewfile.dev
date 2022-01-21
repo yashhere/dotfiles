@@ -44,7 +44,7 @@ cask_args appdir: '/Applications'
   brew 'git-secrets'
   # Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services.
   tap 'microsoft/git'
-  brew 'git-credential-manager-core'
+  cask 'git-credential-manager-core'
   # Remove crazy big files, passwords, credentials and other private data
   brew 'bfg'
   # GitHub command-line tool
@@ -147,7 +147,7 @@ cask_args appdir: '/Applications'
   # Linter for YAML files
   brew 'yamllint'
 
-  "" JSON
+  ## JSON
   brew 'jq'
 ### }}}
 
@@ -171,7 +171,7 @@ cask_args appdir: '/Applications'
   # Plugin manager for kubectl command-line tool
   brew 'krew'
   # The Kubernetes package manager
-  brew 'kubernetes-helm'
+  brew 'helm'
   # Customization of kubernetes YAML configurations
   brew 'kustomize'
   # Tool that can switch between kubectl contexts easily and create aliases
@@ -199,7 +199,6 @@ cask_args appdir: '/Applications'
   brew 'mysql'
   # PostgreSQL
   brew 'postgresql'
-  cask 'datagrip'
 
   ## Key-Value DB
   # Persistent key-value database, with built-in net interface
@@ -209,5 +208,5 @@ cask_args appdir: '/Applications'
   # Publish-subscribe messaging rethought as a distributed commit log
   brew 'kafka'
   # Generic command-line non-JVM Apache Kafka producer and consumer
-  brew 'kafkacat'
+  brew 'kcat'
 ### }}}
