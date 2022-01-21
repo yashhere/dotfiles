@@ -22,3 +22,5 @@ export SHORT_HOSTNAME=$(hostname -s)
 # Set Xterm/screen/Tmux title with shortened command and directory.
 # Uncomment this to set.
 #export SHORT_TERM_LINE=true
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
