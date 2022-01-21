@@ -1,0 +1,18 @@
+# vi: filetype=brewfile
+# Brewfile.dev-base
+
+cask_args appdir: '/Applications'
+
+### Books {{{
+  cask 'calibre'
+### }}}
+
+### Cloud Storage {{{
+  cask 'dropbox'
+### }}}
+
+### Notes {{{
+  cask 'evernote'
+  cask 'notion'
+  mas "Bear", id: 1091189122
+### }}}
