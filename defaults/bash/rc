@@ -1,0 +1,4 @@
+source ~/dotfiles/defaults/bash/shell
+source ~/dotfiles/defaults/bash/aliases
+source ~/dotfiles/defaults/bash/prompt
+source ~/dotfiles/defaults/bash/init

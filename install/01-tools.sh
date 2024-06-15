@@ -1,0 +1,1 @@
+yay -S --needed --noconfirm vim eza bat ripgrep fzf git lazygit zoxide mise github-cli plocate btop

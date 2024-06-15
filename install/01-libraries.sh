@@ -1,0 +1,1 @@
+yay -S --needed --noconfirm tar ffmpeg redis sqlite3 imagemagick
