@@ -1,3 +1,9 @@
+iatest=$(expr index "$-" i)
+
+# Disable the bell
+if [[ $iatest > 0 ]]; then bind "set bell-style visible"; fi
+
+
 # History control
 shopt -s histappend
 HISTCONTROL=ignoreboth
